@@ -13,5 +13,5 @@
     overflow: hidden;
     white-space: nowrap;
     animation: type 3s steps(40, end);
-    color: var(--secondary-color); /* Assuming you have a CSS variable for secondary color */
+    color: var(--secondary-color); 
   }

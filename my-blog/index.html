@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,10 +21,10 @@
         theme: {
           extend: {
             colors: {
-              primary: "#CA9C77",
-              secondary: "#795546",
-              borderGray: "#696660",
-              light: "#FDEDDC",
+              primary: "#C89C7B",
+              secondary: "#766462",
+              borderGray: "#CAC1BE",
+              light: "#FCFAF8",
               dark: "#2B2A28",
             },
           },
@@ -32,7 +32,7 @@
       };
     </script>
   </head>
-  <body class="min-h-screen bg-dark text-light py-8 px-4 relative">
+  <body class="min-h-screen text-dark py-8 px-4 relative">
     <!-- Top logo pattern -->
     <div class="absolute mx-auto top-0 left-1/2 transform -translate-x-1/2">
       <img src="../assets/logo pattern.svg" alt="Background Element" />
@@ -137,7 +137,7 @@
         <!-- Sidebar (Table of Contents) - Hidden on mobile -->
         <aside
           id="sidebar"
-          class="bg-primary bg-opacity-5 rounded-lg shadow-md p-4 z-40 hidden md:block"
+          class="bg-light rounded-lg p-4 z-40 hidden md:block"
         >
           <h2 class="text-xl font-bold mb-4">Articles</h2>
           <ul id="article-list" class="space-y-2">
@@ -153,19 +153,25 @@
           <!-- Article Header -->
           <div class="flex justify-between items-center mb-4">
             <h2 id="article-title" class="text-2xl font-bold"></h2>
-            <span id="article-views" class="text-sm text-light"></span>
+            <span id="article-views" class="text-sm text-gray-400"></span>
           </div>
 
           <!-- Button Group -->
           <div class="flex flex-wrap gap-2 mb-4">
             <!-- Share Button -->
-            <button id="share-button" class="btn bg-primary text-light">
+            <button
+              id="share-button"
+              class="btn border border-borderGray bg-inherit text-gray-600"
+            >
               Share
             </button>
 
             <!-- Format Button and Dropdown Card -->
             <div class="dropdown relative">
-              <button id="format-button" class="btn bg-primary text-light">
+              <button
+                id="format-button"
+                class="btn border border-borderGray bg-inherit text-gray-600"
+              >
                 Format
               </button>
               <div
@@ -238,7 +244,10 @@
 
             <!-- Languages Dropdown -->
             <div class="dropdown relative">
-              <button id="language-button" class="btn bg-primary text-light">
+              <button
+                id="language-button"
+                class="btn border border-borderGray bg-inherit text-gray-600"
+              >
                 Languages
               </button>
               <div
@@ -267,13 +276,16 @@
             </div>
 
             <!-- Download Button -->
-            <button id="download-pdf" class="btn bg-primary text-light">
+            <button
+              id="download-pdf"
+              class="btn border border-borderGray bg-inherit text-gray-600"
+            >
               Download PDF
             </button>
           </div>
 
           <!-- Article Body -->
-          <div id="article-body" class="text-light">
+          <div id="article-body" class="text-gray-600">
             <!-- Article content will be dynamically inserted here -->
             <p>Select an article from the sidebar to view content.</p>
           </div>
